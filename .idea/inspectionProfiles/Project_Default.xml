@@ -1,0 +1,17 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="anu" />
+          <option value="prasu.prasu.urls.pras23" />
+          <option value="joshna.joshna.urls.baby" />
+          <option value="loginsystem.loginsystem.urls.loginApp" />
+          <option value="New_User" />
+          <option value="A1.views.django" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

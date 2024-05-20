@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>gal---2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style-1.css">
+	<!-- Demo CSS (No need to include it into your project) -->
+	<!-- <link rel="stylesheet" href="style-2.css"> -->
+  <script>
+    setInterval(changeColor,1000)
+    function changeColor() {
+      var x = document.getElementById('heading');
+      if (x.style.color == "black")
+      x.style.color = "yellow";
+      else if(x.style.color == "yellow")
+      x.style.color = "blue";
+      else if(x.style.color == "blue")
+      x.style.color = "red";
+      else if(x.style.color == "red")
+      x.style.color = "green";
+      else if(x.style.color == "green")
+      x.style.color = "purple";
+      else if(x.style.color == "purple")
+      x.style.color = "black";
+      else x.style.color = "black"
+    }
+  </script>
+   <script>
+    setInterval(changeColor,1000)
+    function changeColor() {
+      var x = document.getElementById('heading1');
+      if (x.style.color == "black")
+      x.style.color = "yellow";
+      else if(x.style.color == "yellow")
+      x.style.color = "blue";
+      else if(x.style.color == "blue")
+      x.style.color = "red";
+      else if(x.style.color == "red")
+      x.style.color = "green";
+      else if(x.style.color == "green")
+      x.style.color = "purple";
+      else if(x.style.color == "purple")
+      x.style.color = "black";
+      else x.style.color = "black"
+    }
+  </script>
+<script>
+  function myFunction11() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+  </script>
+    <style>
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  margin-left: 520px;
+  padding: 15px;
+  /* border-radius: 20%; */
+  width: 28%;
+  font-size: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0px 0px 5px blue;
+}
+
+#myUL {
+  list-style-type: none;
+ 
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+#myUL li a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+    </style>
+    
+  </head>
+  <body>
+  <header class="intro">
+ <h1 id="heading">RAJESH PET'S STORE </h1>
+ </header>
+ <input type="text" id="myInput" onkeyup="myFunction11()" placeholder="Search for Petnames......">
+  
+
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+<div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+      
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+              <button class="purchase-btn">PURCHASE</button>
+        </div>
+      </div>
+</div>
+      
+<!--   end of cart modal -->
+  <div class="cart-btn">
+    <i id="cart" class="fas fa-shopping-cart"></i>
+      <span class ="cart-quantity">0</span>
+  </div>
+
+<!--  products  -->
+  <div class="items-container">
+   
+    <ul id="myUL">
+    <div class="row">
+    <li>
+    <div class="card-1 card">
+      <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird19.jpeg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <a href="#"><h2>Trinity:<span class="product-price">$1175</span></h2></a>
+          <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+    </div>
+  </a>
+    </li>
+    <li>
+    <div class="card-2 card">
+      <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird20.jpeg" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <a href="#"><h2>Pyssa:<span class="product-price">$1175</span></h2></a>
+        <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+    </div>
+  </a>
+  </li>
+  <li>
+
+    <div class="card-3 card">
+      <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird18.jpeg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <a href="#"><h2>Blyssa:<span class="product-price">$1175</span></h2></a>
+          <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+    </div>
+  </a>
+  </li>
+  <li>
+    <div class="card-2 card">
+      <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird10.jpeg" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <a href="#"><h2>Clyssa:<span class="product-price">$1175</span></h2></a>
+        <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+    </div>
+    </div> 
+  </li>
+  
+      <div class="row">
+      <li>
+        <div class="card-1 card">
+          <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird17.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <a href="#"><h2>Dlyssa:<span class="product-price">$1175</span></h2></a>
+              <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+        </div>
+      </li>
+      <li>
+        <div class="card-2 card">
+          <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird16.jpeg" alt="">
+          <button class="add-to-cart">Add to cart</button>
+          <a href="#"><h2>Elyssa:<span class="product-price">$1175</span></h2></a>
+            <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+        </div>
+      </li>
+      <li>
+        <div class="card-3 card">
+          <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird15.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <a href="#"><h2>Flyssa:<span class="product-price">$1175</span></h2></a>
+              <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+        </div>
+      </li>
+      <li>
+        <div class="card-2 card">
+          <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird10.jpeg" alt="">
+          <button class="add-to-cart">Add to cart</button>
+          <a href="#"><h2>Vlyssa:<span class="product-price">$1175</span></h2></a>
+            <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+        </div>
+      </li>
+        </div>
+
+        <div class="row">
+        <li>
+            <div class="card-1 card">
+              <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird14.jpeg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <a href="#"><h2>Glyssa:<span class="product-price">$1175</span></h2></a>
+                  <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+            </div>
+          </li>
+          <li>
+            <div class="card-2 card">
+              <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird13.jpeg" alt="">
+              <button class="add-to-cart">Add to cart</button>
+              <a href="#"><h2>Hlyssa:<span class="product-price">$1175</span></h2></a>
+                <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+            </div>
+          </li>
+          <li>
+            <div class="card-3 card">
+              <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird12.jpeg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <a href="#"><h2>Ilyssa:<span class="product-price">$1175</span></h2></a>
+                  <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+            </div>
+          </li>
+          <li>
+            <div class="card-2 card">
+              <img class="product-image" src="C:\Users\PRASAD\Desktop\project\Birds\bird11.jpeg" alt="">
+              <button class="add-to-cart">Add to cart</button>
+              <a href="#"><h2>Blyssa:<span class="product-price">$1175</span></h2></a>
+                <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+            </div>
+          </li>
+            </div> 
+         
+    </div>
+  </div>
+</ul>
+    
+
+    
+     <!-- END EDMO HTML (Happy Coding!)-->
+ </main>
+ 
+ <footer>
+  <div class="" style="float: right;text-shadow: 0px 0px 10px blue;">
+    <h1 id="heading1"> CREATED BY  <font face="Edwardian Script ITC">_smile_king_512.......(*_*)</font></h1>
+  </div>
+  
+</footer>
+  
+  <script  src="script.js"></script>
+  </body>
+</html>

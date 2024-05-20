@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .body{
+            background-image: url('https://vistapointe.net/images/pets-wallpaper-5.jpg'); width: 1400px; height: 600px; 
+            margin-top: 60px;
+            margin-left: 65px;
+            background-repeat: no-repeat;
+            border: 2px double pink;
+        }
+        
+        .container{
+            background-color: color(from srgb r g b);
+            width: 400px;
+            height: 550px;
+            margin-left: 950px;
+            margin-top: 20px;
+            /* margin-top: 20px; */
+            border:3px dotted blue;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+        label{
+            font-size: larger;
+            margin-left: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .box{
+            width: 350px;
+            height: 30px;
+            border: 1px solid black;
+            /* border-radius: 50px; */
+            /* border-radius: 10px; */
+            margin-left: 20px;
+        }
+        button{
+            width: 350px;
+            height: 30px;
+            /* margin-left: 150px; */
+            background-color: rgba(45, 91, 230, 0.74);
+            /* border-radius: 10px; */
+            margin-left: 20px;
+        }
+        hr{
+            width: 100px;
+            border: 1px solid black;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            padding-left: 10px;
+            list-style-type: none;
+
+        }
+        ul li a{
+            text-decoration: none;
+            /* list-style-image: url('sqpurple.gif'); */
+        }
+        #l1{
+            margin-left: 20px;
+            margin-top: -15px;
+        }
+        #l2{
+            margin-left: 140px;
+            margin-top: -15px;
+        }
+
+    </style>
+    <script>
+      function isLetters(e, t)
+{
+   if (window.event)
+   {
+      var charCode = window.event.keyCode;
+   }
+   else if (e)
+   {
+      var charCode = e.which;
+   }
+   else { return true; }
+   if ((charCode > 64 && charCode < 91) || charCode==32 ||
+   (charCode > 96 && charCode < 123))
+       return true;
+   else
+   {
+      alert("Please enter only alphabets");
+      return false;
+   }
+ }
+</script>
+
+<script>functionisNumber(evt) {
+//     //     evt = (evt) ? evt : window.event;
+//     //     var charCode = (evt.which) ? evt.which : evt.keyCode;
+//     //     if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+//     //         alert("Please enter only numbers");
+//     //         return false;
+//     //     }
+//     //     return true;
+//     // }
+//     // function mycolor(color)
+//     // {
+//     //     document.forms[0].myInput.style.background=color;
+//     // }
+//     // function mouseDown() {
+//     //     document.getElementById("myMouse").style.background = "yellow";
+//     // }
+//     // function mouseUp() {
+//     //     document.getElementById("myMouse").style.background= "lightgreen";
+//     // }
+//     // function mouseMove() {
+//     //     document.getElementById("myMouse").style.background= "blue";
+//     // }}
+//     // </script>
+
+
+</head>
+<body>
+    <div class="body">
+    <div class="container" id="myMouse" onmousedown="mouseDown()" onmouseup="mouseUp()" onmousemove="mouseMove()">   
+        <h2  style="text-align: center; color: rgb(32, 39, 127);text-decoration: underline;" id="myMouse" onmousedown="mouseDown()" onmouseup="mouseUp()"><font face="Arial Black">Register</font></h2>
+
+        <form action="C:\Users\PRASAD\Desktop\project\index\project1.html">
+            <label for="name">Name:</label>
+            <input class="box" onkeydown="mycolor('yellow')" onkeyup="mycolor('pink')" name="myInput"  type="text" placeholder="    Enter Your  Name :"pattern="[a-zA-Z ]{3,15}" onkeypress="return isLetters(event,this);"  required autofocus>
+    </br>
+            <label for="Number">Phone Number:</label>
+            <input class="box" id="number" type="text" placeholder="    Enter Your Number :" onkeypress="return isNumber(event,this);" required>
+    </br>
+            <label for="Gmail">Gmail:</label>
+            <input class="box" type="email" placeholder="   Enter Your Gmail ID :" required>
+        </br>
+    <label for="psw">Create Password</label>
+    <br>
+    <input type="password" class="box" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="    Create Password"required>
+        </br>
+    <label for="psw">Confirm Password</label>
+    <br>
+    <input type="password" class="box" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="    Confirm Password" required>
+        </br>
+    </br> 
+    <button onmouseover="style.background='green'"
+    onmouseout="style.background= 'deep blue'">Submit</button>
+        </form>
+        <br>
+        <hr>
+        <br>
+        <form action="C:\Users\PRASAD\Desktop\project\index\Login.html">
+            <button style=" width: 350px; height: 50px;border-top-left-radius: 50px;border-bottom-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px; background-color:rgb(23, 220, 111);"  id="myMouse" onmousedown="mouseDown()" onmouseup="mouseUp()"><font face="Arial black" size=" 5"> Login</font></button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

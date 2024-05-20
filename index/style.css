@@ -1,0 +1,372 @@
+/* =============== dark-mode====================== */
+body {
+  /* padding: 2px; */
+  background-color: white;
+  color: black;
+  /* font-size: 25px; */
+}
+
+.dark-mode {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+/* ========================== sidebar=================== */
+/* body {
+  font-family: "Lato", sans-serif;
+} */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 70px;
+  left: 81%;
+  background-color: #edfbd7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ff0606;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #d30f0f;
+  color: white;
+  /* padding: 10px 15px; */
+  border: none;
+  margin-left: 10px;
+  margin-right: 25px;
+  border-radius: 100%;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#mains {
+   /* transition: margin-left .5s;  */
+  /* padding: 16px; */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* ========================navbar form====================== */
+.form-control{
+    border-radius: 0px;
+    width: 250px;
+}
+form .btn {
+    border-radius: 50%;
+}
+
+/* ========================carousel======================== */
+
+#Home {
+  margin-top: 30px;
+}
+
+.carousel-item{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+}
+.carousel-item img{
+    width: 100%;
+    height: 300px;
+    /* border: 2px double black; */
+}
+.s ul li a{
+    color: rgb(0, 136, 255);
+}
+div.as{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: left;
+    justify-content: left;
+    width: 400px;
+}
+
+/* =================About=========================== */
+
+.About{
+    width: fit-content;
+    max-height: max-content;
+    /* background-color: #f5ebe0; */ */
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;   
+}
+
+
+@media only screen and (min-width: 500px) {
+  /* For desktop: */
+  /* .About {width: 400px;} */
+
+}
+
+.About img{
+    width: 600px;
+    height: 400px;
+    margin: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.About h1 {
+    width: 90%;
+    height: 20px;
+    margin: 50px;
+    font-style:italic;
+    font-family: calc("Edwardian Script ITC");
+}
+.About p{
+    width: 90%;
+    height: 300px;
+    margin: 50px;
+    font-style: oblique;
+    font-family: cursive;
+}
+
+/* ===========================footer============== */
+
+footer{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: black;
+  /* border: 5px solid red; */
+  border-top-style: var(fa-instagram);
+  color : aliceblue;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  height: 400px;
+
+}
+.fa-square-facebook{
+    font-size: 40px;
+    color: blue;
+    border-radius: 10px;
+}
+.fa-whatsapp{
+    font-size: 50px;
+    color: rgb(0, 255, 34);
+    border-radius: 20px;
+    margin-left: 1450px;
+    margin-bottom: 20px;
+}
+.fa-instagram{
+    font-size: 40px;
+    color: rgb(224, 3, 143);
+    border-radius: 10px;
+}
+.fa-skype{
+    font-size: 40px;
+    color: rgb(171, 232, 254);
+    border-radius: 10px;
+}
+.fa-twitter-square{
+    font-size: 40px;
+    color: rgb(171, 232, 254);
+    border-radius: 10px;
+}
+/* ===================Chart icon========================== */
+.chat a{
+    margin-top: 300px;
+    margin-right: 50px;
+    position: fixed;
+    margin-left: 1450px;
+    
+}
+.marquee{
+    color: rgb(0, 0, 0);
+    background-color: #e5e5e5;
+    text-shadow: inset 2px 2px 4px purple;
+    /* margin-top: 20px; */
+     height: 50px;
+}
+
+/* ================Card=========== */
+.card{
+    width: 350px;
+    height: 350px;
+    background:	#ffffff !important;
+    border: none !important;
+    /* box-shadow: 10px 10px 10px rgba(25, 255, 41, 0.3),
+                 inset 4px 4px 10px hwb(0 100% 0%);  */
+    border-radius: 10px !important;
+    overflow: hidden;
+    justify-content: center;
+    margin-left: 40px 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: .8s;
+}
+.card img{
+    width: 346px;
+    height: 200px;
+    margin-left: 2px;
+    margin-top: 27px;
+    padding:20px;
+    /* border: 1px solid black;
+    border-radius: 20px; */
+}
+
+.card a:hover{
+ transform: scale(1.3);
+}
+.AA{
+    display: flex;
+    justify-content: left;
+}
+.AAA{
+    display: flex;
+    justify-content: left;
+}
+
+/* ===================accordian===================== */
+#help{
+    background-color: #000000;
+}
+.pp{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 95%;
+    height:100%;
+}
+
+.para{
+    background-color: #e7e7e7;
+    width: 100%;
+    max-height: max-content;
+    margin: 0px 10px;
+    color: rgb(0, 0, 0);
+}
+p{
+    margin-left: 40px;
+
+}
+embed{
+    width: 350px;
+    height: 250px;
+    margin-left:50px;
+    margin-bottom: 40px;
+    transition: .5s;
+    border-radius: 0px;
+    
+}
+/* embed:hover{
+    transform: scale(1.1)
+
+} */
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    margin: 40px;
+    border: 1px solid #000000;
+    perspective: 1000px;
+    /* border-radius: 100%; */
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front img {
+    /* background-image: url("C:\Users\PRASAD\Desktop\IMG_20230607_142955.jpg"); */
+    
+    color: black;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 350px;
+    background-size: 100%;
+    /* border-radius: 10px; */
+  }
+  
+  .flip-box-back{
+    /* background-image: url("C:\Users\PRASAD\Desktop\IMG_20230625_110115.jpg"); */
+    background-image: repeating-linear-gradient(orange 10%,rgb(125, 125, 242) 10%, white 33.3%);
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 350px;
+    /* background-size: 100%; */
+  }
+  .FFF{
+    width: 90%;
+    margin: 55px;
+    padding: 40px;
+    background-color: #fefefe;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 30px rgb(48, 41, 41)
+  }
+  .forms {
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 47%;
+    height: 40px;
+  }
+  .text{
+    width: 97%;
+    height: 40px;
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+  .message{
+    width: 97%;
+    /* height: 40px; */
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+  iframe {
+    width: 100%;
+    height: 450px;
+  }
+
+
+
+
+  

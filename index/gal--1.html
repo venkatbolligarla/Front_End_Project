@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>gal--1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style-1.css">
+	<!-- Demo CSS (No need to include it into your project) -->
+	<!-- <link rel="stylesheet" href="style-2.css"> -->
+
+  <script>
+    setInterval(changeColor,1000)
+    function changeColor() {
+      var x = document.getElementById('heading');
+      if (x.style.color == "black")
+      x.style.color = "yellow";
+      else if(x.style.color == "yellow")
+      x.style.color = "blue";
+      else if(x.style.color == "blue")
+      x.style.color = "red";
+      else if(x.style.color == "red")
+      x.style.color = "green";
+      else if(x.style.color == "green")
+      x.style.color = "purple";
+      else if(x.style.color == "purple")
+      x.style.color = "black";
+      else x.style.color = "black"
+    }
+  </script>
+  <script>
+    setInterval(changeColor,1000)
+    function changeColor() {
+      var x = document.getElementById('heading1');
+      if (x.style.color == "black")
+      x.style.color = "yellow";
+      else if(x.style.color == "yellow")
+      x.style.color = "blue";
+      else if(x.style.color == "blue")
+      x.style.color = "red";
+      else if(x.style.color == "red")
+      x.style.color = "green";
+      else if(x.style.color == "green")
+      x.style.color = "purple";
+      else if(x.style.color == "purple")
+      x.style.color = "black";
+      else x.style.color = "black"
+    }
+  </script>
+  
+  </head>
+  <body>
+    <header class="intro">
+      <h1 id="heading">RAJESH PET'S STORE </h1>
+      <br>
+      </header>
+      <input type="text" id="myInput" onkeyup="myFunction11()" placeholder="Search for Petnames......">
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+<div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+      
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+              <button class="purchase-btn">PURCHASE</button>
+        </div>
+      </div>
+</div>
+      
+<!--   end of cart modal -->
+  <div class="cart-btn">
+    <i id="cart" class="fas fa-shopping-cart"></i>
+      <span class ="cart-quantity">0</span>
+  </div>
+<!--  products  -->
+  <div class="items-container">
+    <ul id="myUL">
+    <div class="row">
+      <li>
+            <div class="card-1 card">
+      <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy19.jpeg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <br>
+          <a href=""><h2>Mirabel:<span class="product-price">$1395</span></h2></a>
+          <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+    </div>
+  </li>
+  <li>
+  
+    <div class="card-2 card">
+      <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy18.jpeg" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <br>
+        <a href=""><h2>Amanda:<span class="product-price">$1175</span></h2></a>
+        <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+    </div>
+  </li>
+  <li>
+    <div class="card-3 card">
+      <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy17.jpeg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <br>
+          <a href=""><h2>Tyson:<span class="product-price">$1150</span></h2></a>
+          <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+    </div>
+  </li>
+  <li>
+    <div class="card-2 card">
+    <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy8.jpeg" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <br>
+        <a href=""><h2>Amanda:<span class="product-price">$1175</span></h2></a>
+        <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+    </div>
+    </div> 
+  </li>
+    <div class="row">
+    <li>
+        <div class="card-1 card">
+        <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy16.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <br>
+              <a href=""><h2>Bianca:<span class="product-price">$1395</span></h2></a>
+              <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+        </div>
+      </li>
+      <li>
+        <div class="card-2 card">
+          <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy15.jpeg" alt="">
+          <button class="add-to-cart">Add to cart</button>
+          <br>
+            <a href=""><h2>Trinity:<span class="product-price">$1175</span></h2></a>
+            <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+        </div>
+      </li>
+      <li>
+        <div class="card-3 card">
+          <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy14.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <br>
+              <a href=""><h2>Alyssa:<span class="product-price">$1150</span></h2></a>
+              <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+        </div>
+      </li>
+      <li>
+        <div class="card-2 card">
+          <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy9.jpeg" alt="">
+          <button class="add-to-cart">Add to cart</button>
+          <br>
+            <a href=""><h2>Amanda:<span class="product-price">$1175</span></h2></a>
+            <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+        </div>
+      </li>
+        </div>
+
+        <div class="row">
+        <li>
+            <div class="card-1 card">
+              <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy13.jpeg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <br>
+                  <a href=""><h2>Buddy:<span class="product-price">$1395</span></h2></a>
+                  <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+            </div>
+          </li>
+          <li>
+            <div class="card-2 card">
+            <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy12.jpeg" alt="">
+              <button class="add-to-cart">Add to cart</button>
+              <br>
+             <a href=""><h2> Cooper:<span class="product-price">$1175</span></h2></a>
+             <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+            </div>
+          </li>
+          <li>
+            <div class="card-3 card">
+              <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy11.jpeg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <br>
+                  <a href=""><h2>Bella:<span class="product-price">$1150</span></h2></a>
+                  <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+            </div>
+          </li>
+          <li>
+            <div class="card-2 card">
+              <img class="product-image" src="C:\Users\PRASAD\Desktop\project\puppies\puppy10.jpeg" alt="">
+              <button class="add-to-cart">Add to cart</button>
+              <br>
+                <a href=""><h2>Amanda:<span class="product-price">$1175</span></h2></a>
+                <button class="fishbutton" onclick="alert('Thank you For Booking')">Buy Now</button>
+            </div>
+            </div>
+          </li>
+    </div>
+  </ul>
+    
+
+    
+     <!-- END EDMO HTML (Happy Coding!)-->
+ </main>
+       
+  <footer>
+    <div class="" style="float: right;text-shadow: 0px 0px 10px blue;">
+      <h1 id="heading1"> CREATED BY  <font face="Edwardian Script ITC">_smile_king_512.......(*_*)</font></h1>
+    </div>
+    
+  </footer>
+  
+  <script  src="script.js"></script> 
+  </body>
+</html>

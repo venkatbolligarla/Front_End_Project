@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+      }
+      body {
+        background-image: url(Orphanimage-4.webp.jpg);
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="C:\Users\PRASAD\Desktop\project\index\project1.html">
+      <fieldset style="background-color: darkolivegreen">
+        <h2>Forgot Password!</h2>
+        <label for="otp">Enter OTP:</label><br />
+        <input type="text" id="otp" style="height: 20px" required /><br /><br />
+        <label for="cps">Create Password:</label><br />
+        <input
+          type="password"
+          id="cps"
+          style="height: 20px"
+          required
+        /><br /><br />
+        <label for="cfps">Confirm Password:</label><br />
+        <input
+          type="password"
+          id="cfps"
+          style="height: 20px"
+          required
+        /><br /><br />
+        <button style="margin-left: 50px; color: red">Submit</button>
+      </fieldset>
+    </form>
+    <script>
+      function generateOTP() {
+        // Declare a digits variable
+        // which stores all digits
+        var digits = "0123456789";
+        let OTP = "";
+        for (let i = 0; i < 6; i++) {
+          OTP += digits[Math.floor(Math.random() * 10)];
+        }
+        return OTP;
+      }
+
+      alert("OTP of 6 digits: ");
+      alert(generateOTP());
+    </script>
+  </body>
+</html>

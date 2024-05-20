@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProFile</title>
+    <style> *{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'poppins', sans-serlf;
+        box-sizing: border-box;
+    }
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background: #d1d1d1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .card{
+            width: 500px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            color:#333
+
+        }
+       .card img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-top: 40px;
+            border: 2px solid black;
+        }
+        label {
+            display: block;
+            width:  200px;
+            background: #e3362c;
+            color: #fff;
+            padding: 12px;
+            margin: 10px auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input{
+        display:none;         
+        }
+    </style>
+</head>
+<body>
+    
+<div class="hero">
+    <div class="card">
+        <img src="C:\Users\PRASAD\OneDrive\Pictures\lard  .jpg" id ="Profile-Pic">
+        <label for="input-file">Upload image</label>
+        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+        <h1>venkat prasad</h1>
+        <p>@elonmusk</p>
+    </div>
+</div>
+<script>
+    let profilePic = document.getElementById("Profile-Pic");
+    let inputFiles = document.getElementById("input-file");
+
+    inputFile.onchange = function(){
+        profilePic.src = URL.createobjectURL(inputFile.files[0])
+    }
+</script>
+
+</body>
+</html>
